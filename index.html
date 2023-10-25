@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Today</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7jqsrsGPYjO8L3OPXKVN-A6usQqJ_nmeVM6zlKc3830xnaNJVRsV5jyRpebv3NCGdjug&usqp=CAU">
+
+    <!-- bootstrap cdn -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- font Awsome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bodoni+Moda:ital@1&family=Borel&family=Cinzel:wght@500&family=Courgette&family=Croissant+One&family=Exo+2:ital@1&family=Gloria+Hallelujah&family=Graduate&family=Inconsolata&family=Josefin+Sans&family=Josefin+Slab&family=Lemonada&family=Nabla&family=Noto+Sans+JP:wght@300&family=Noto+Sans+Vithkuqi:wght@500&family=Orbitron:wght@500&family=Oswald:wght@200&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <!-- css link -->
+       <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <div class="navbar">
+        <h2>Weather Today</h2>
+        <div class="searchbox">
+            <input type="text" id="cityname" class="searchinp" placeholder="Enter city">
+            <button type="submit" class="btn searchButton" onclick="citysearch()">
+            <i class="fa fa-search"></i>
+             </button>
+        </div>
+    </div>
+    <div class="home">
+        <div class="sub-home">
+             <!-- home page video -->
+             <div class="video-div">
+                <video id="background-video" autoplay muted loop class="h-video">
+                  <source src="./videos/clouds.mp4" type="video/mp4">
+                </video>
+              </div>
+            <div class="row w-details">
+               <div class="col-lg-6 col-md-12 ">
+                <h1 id="w-detailsh1">Weather in <span id="cname">Kochi</span> </h1>
+
+                <h3>Current Weather</h3> 
+                
+              <div class="d-flex justify-content-center logotempdiv">
+                <img src="./images/sun.png" id="wlogo" class="mt-4" alt="ErrOR 404" height="125px" width="125px">
+                
+                <h3 id="tempnow">35</h3><h2 id-="spantemp">℃</h2>
+                    
+              </div>
+              <h3 id="feels-like">feels like <span id="feels_like">34</span></h3>
+                <h3 id="Descripion">Cloudy</h3>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-details">
+                <table class="table-details">
+                    <tr>
+                        <td><h2>Location:   </h2></td>
+                        <td><h2 id="loca">kochi</h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Time:</h2></td>
+                        <td><h2 id="clock"></h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Pressure:</h2></td>
+                        <td><h2 id="pressure">1010</h2></td>
+                    </tr>
+                    <tr>
+                        <td> <h2>Humidity:</h2></td>
+                        <td> <h2><span id="humidity">68</span>%</h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Visibility: </h2></td>
+                        <td><h2 id="visib">3100</h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Wind:</h2></td>
+                        <td><h2><span id="wind">1.02</span>Km/hr</h2></td>
+                    </tr>
+                </table>
+                <h2><span id="calendar"></span></h2>
+
+                
+                
+               
+                
+                
+                
+                
+            </div>
+
+            </div>
+           
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

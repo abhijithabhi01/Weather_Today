@@ -1,0 +1,111 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+}
+/* navbar */
+.navbar {
+    overflow: hidden;
+}
+.navbar h2{
+    color: rgb(255, 145, 0);
+    font-size: 40px;
+    margin: .5rem 0rem 0rem 2rem;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 600;
+}
+
+/* search box */
+.searchbox{
+    margin-right: 2rem;
+    
+}
+.searchinp{
+    background:transparent ;
+    border: 2.5px solid #95d61c;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+}
+.searchButton{
+    width: 40px;
+    height: 38px;
+    color: #95d61c;
+    text-align: center;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .searchButton:hover{
+    color: white;
+    background: #000000;
+  }
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  /* home page */
+
+.home{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.sub-home{
+    height: 80%;
+    width: 100%;
+}
+.w-details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    height: 500px;
+    width: 80%;
+border-radius: 5px;
+
+}
+#w-detailsh1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #101820;
+}
+.w-details h2{
+    font-size: 30px;
+    font-weight: 580;
+}
+.w-details h3{
+    font-family: sans-serif;
+}
+.table-details h2{
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+}
+.table,
+tr,
+td{
+	text-align: center;
+}
+#tempnow{
+    font-size: 150px;
+    font-family: 'Exo 2', sans-serif;
+}
+#spantemp{
+    font-size: 50px;
+}
+#Descripion,#feels-like{
+}
+.col-lg-6{
+text-align: center;
+background-color: #ffffff;
+}
+.col-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
