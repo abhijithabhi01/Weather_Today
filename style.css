@@ -68,8 +68,8 @@
     padding: 1rem;
     height: 500px;
     width: 80%;
-border-radius: 5px;
-
+    border-radius: 10px;
+    background-color: white;
 }
 #w-detailsh1{
     font-size: 50px;
@@ -100,10 +100,7 @@ td{
 }
 #Descripion,#feels-like{
 }
-.col-lg-6{
-text-align: center;
-background-color: #ffffff;
-}
+
 .col-details{
     display: flex;
     flex-direction: column;

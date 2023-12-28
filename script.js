@@ -2,7 +2,7 @@
 
 function citysearch(){
     let city_name = cityname.value
-   // let API_KEY = 
+
    
     // object creation
     const cityobj = new XMLHttpRequest
@@ -21,7 +21,9 @@ function citysearch(){
             
                 const weather_logo = document.getElementById("wlogo")
                 const bvideo = document.getElementById("background-video")
-
+                if(city_name){
+                    
+                }
                 cname.innerHTML =  cityy.name
                 
                 tempnow.innerHTML = Math.trunc(cityy.main.temp-273)
